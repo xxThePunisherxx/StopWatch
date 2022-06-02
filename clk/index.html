@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap" rel="stylesheet" />
+		<title>Count Down</title>
+	</head>
+	<body>
+		<div class="timer">
+			<div class="premadeTime">
+				<div class="heightd">
+					<h1>Quick timer</h1>
+					<button onclick="timera()">5 mins</button>
+					<button onclick="timerb()">30 mins</button>
+					<button onclick="timerc()">1 hr</button>
+					<button onclick="timerd()">3 hr</button>
+				</div>
+			</div>
+			<div class="window">
+				<div class="count_container">
+					<div class="title">
+						<h1>Countdown Timer</h1>
+					</div>
+					<div class="display_numbers">
+						<div class="day">
+							<h2 id="__day">00</h2>
+							<p>Days</p>
+						</div>
+						<div class="hr">
+							<h2 id="__hr">00</h2>
+							<p>Hours</p>
+						</div>
+						<div class="min">
+							<h2 id="__min">00</h2>
+							<p>Minutes</p>
+						</div>
+						<div class="sec">
+							<h2 id="__sec">00</h2>
+							<p>Seconds</p>
+						</div>
+					</div>
+					<div class="alert">
+						<h3 id="alert_empty">Cant count to nothing.</h3>
+					</div>
+					<div class="input">
+						<div class="input_headin">
+							<h1>Time input</h1>
+						</div>
+						<div class="input_feilds">
+							<input type="text" placeholder="Days" class="_days" />
+							<input type="text" placeholder="Hours" class="_hrs" />
+							<input type="text" placeholder="Minutes" class="_mins" />
+							<input type="text" placeholder="Seconds" class="_secs" />
+						</div>
+					</div>
+					<div class="buttons">
+						<button id="start" onclick="countDown()">Start</button>
+					</div>
+				</div>
+			</div>
+			<audio src="./audio/aud.mp3" loop="loop" id="testAudio"></audio>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
